@@ -1,14 +1,14 @@
 #include <iostream>
-#include <float.h>
+#define PI 3.14159
 
 using std::cout; // using directives 
 using std::endl; 
 
 int main()
 {
-    cout<<"Float  Truth Digits: "<<FLT_DIG<<endl;
-    cout<<"Double Truth Digits: "<<DBL_DIG<<endl;
-    cout<<"Long   Truth Digits: "<<LDBL_DIG<<endl;
+    const int age = 23;
+    cout<<"Age : "<<age<<endl;
+    cout<<"PI  : "<<PI<<endl;
     return 0;    
 }
 
