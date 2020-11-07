@@ -6,25 +6,10 @@ using std::endl;
 
 int main()
 {
-    std::string name = "Miriam Arreola";
-    std::string name2 = "Ulises";
-    name.append(" Hernandez");
-    name.insert(7,"Love ");
-    name.erase(7,5);
-    name.pop_back();
-    name.pop_back();
-    name.push_back('e');
-    name.push_back('z');
-    if(name2.compare("Ulises")==0)
-    {
-        cout<<"Equal!"<<endl;
-    }
-    else
-    {
-        cout<<"Not equal"<<endl;
-    }
-    
-    cout<<name<<endl;
+    int x = 0xFF;
+    int y = 255;
+    cout<<x<<endl;
+    cout<<std::hex<<y<<endl;
     return 0;    
 }
 
