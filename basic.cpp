@@ -1,20 +1,18 @@
 #include <iostream>
 #include <cmath>
+#include "operations.h"
 
- using std::cout; // using directives 
- using std::endl; 
- 
+using std::cout; // using directives 
+using std::endl; 
+
 int main()
 {
-    int base = 0; //Local variable declaration and initialization
-    int exponent = 0;
-    cout<<"Base: ";
-    std::cin>>base;
-    cout<<"Exponent: ";
-    std::cin>>exponent;
-    cout<<pow(base,exponent)<<endl;
-    
+    cout<<"Sum : "<<sum(4,5)<<endl; //Calling
     return 0;
 }
 
+int sum(int a, int b) //Declaration
+{
+    return a+b;
+}
 
