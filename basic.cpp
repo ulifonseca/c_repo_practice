@@ -6,23 +6,18 @@ using std::endl;
 
 int main()
 {
-    int age;
-    bool value = true;
-    cout << "Enter age: ";
-
-    std::cin >> age;
-    if (age > 18 && value)
+    int day = 3;
+    switch (day)
     {
-        cout << "You are above eighteen!" << endl;
+    case 1:
+        cout << "Monday" << endl;
+        break;
+    case 2:
+        cout << "Tuesday" << endl;
+        break;
+    default:
+        cout << "Not a day" << endl;
+        break;
     }
-    else if (age < 18)
-    {
-        cout << "You are under eighteen!" << endl;
-    }
-    else
-    {
-        cout << "You are eighteen years old!" << endl;
-    }
-
     return 0;
 }
