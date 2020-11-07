@@ -6,28 +6,14 @@ using std::endl;
 
 int main()
 {
-    int count = 5;
-    int a = 0;
-    int b = 0;
+    int factorial = 5;
 
-    cout << "For loop..." << endl;
-    for (int i = 0; i < count; i++)
+    cout << "Factorial..." << endl;
+    for (int i = factorial - 1; i > 0; i--)
     {
-        cout << i << endl;
+        factorial *= i;
     }
-    cout << "While loop..." << endl;
-
-    while (a < count)
-    {
-        cout << a << endl;
-        a++;
-    }
-    cout << "Do while loop..." << endl;
-    do
-    {
-        cout << b << endl;
-        b++;
-    } while (b < count);
+    cout << "Factorial: " << factorial << endl;
 
     return 0;
 }
