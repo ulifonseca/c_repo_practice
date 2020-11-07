@@ -6,14 +6,18 @@ using std::endl;
 
 int main()
 {
-    int factorial = 5;
+    std::string password = "uli321";
+    std::string guess;
+    int count = 0;
 
-    cout << "Factorial..." << endl;
-    for (int i = factorial - 1; i > 0; i--)
+    do
     {
-        factorial *= i;
-    }
-    cout << "Factorial: " << factorial << endl;
+        cout << "Guees the password: ";
+        std::cin >> guess;
+        count++;
+
+    } while (guess != password && count < 3);
+    cout << "You enter!" << endl;
 
     return 0;
 }
