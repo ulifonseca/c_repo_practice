@@ -1,16 +1,14 @@
 #include <iostream>
-#include <cmath>
+#include <float.h>
 
 using std::cout; // using directives 
 using std::endl; 
 
 int main()
 {
-    bool check = true;
-    char c = 66;
-    cout<<c<<endl;
-    cout<<check<<endl; // 1 and all numbers are true just 0 is false
-    cout<<std::boolalpha<<check<<endl;
+    cout<<"Float  Truth Digits: "<<FLT_DIG<<endl;
+    cout<<"Double Truth Digits: "<<DBL_DIG<<endl;
+    cout<<"Long   Truth Digits: "<<LDBL_DIG<<endl;
     return 0;    
 }
 
