@@ -1,37 +1,33 @@
 #include <iostream>
 #include <string>
 
-using std::cout; // using directives
+using std::cout;
 using std::endl;
 
 int main()
 {
-    enum class Seasons
-    {
-        spring,
-        summer,
-        fall,
-        winter
-    };
-    Seasons now = Seasons::winter;
+    int count = 5;
+    int a = 0;
+    int b = 0;
 
-    switch (now)
+    cout << "For loop..." << endl;
+    for (int i = 0; i < count; i++)
     {
-    case Seasons::spring:
-        cout << "It´s sunny" << endl;
-        break;
-    case Seasons::summer:
-        cout << "It´s very sunny, you need to go swimming!" << endl;
-        break;
-    case Seasons::fall:
-        cout << "It´s cold" << endl;
-        break;
-    case Seasons::winter:
-        cout << "It´s very cold" << endl;
-        break;
-    default:
-        cout << "Not a season" << endl;
-        break;
+        cout << i << endl;
     }
+    cout << "While loop..." << endl;
+
+    while (a < count)
+    {
+        cout << a << endl;
+        a++;
+    }
+    cout << "Do while loop..." << endl;
+    do
+    {
+        cout << b << endl;
+        b++;
+    } while (b < count);
+
     return 0;
 }
