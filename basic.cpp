@@ -6,10 +6,11 @@ using std::endl;
 
 int main()
 {
-    bool check = false;
+    bool check = true;
     char c = 66;
     cout<<c<<endl;
     cout<<check<<endl; // 1 and all numbers are true just 0 is false
-    return 0;
+    cout<<std::boolalpha<<check<<endl;
+    return 0;    
 }
 
