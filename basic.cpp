@@ -6,27 +6,27 @@ using std::endl;
 
 int main()
 {
-    enum seasons
+    enum class Seasons
     {
-        spring = 1,
-        summer = 10,
-        fall = 100,
-        winter = 1000
+        spring,
+        summer,
+        fall,
+        winter
     };
-    seasons now = spring;
+    Seasons now = Seasons::winter;
 
     switch (now)
     {
-    case spring:
+    case Seasons::spring:
         cout << "It´s sunny" << endl;
         break;
-    case summer:
+    case Seasons::summer:
         cout << "It´s very sunny, you need to go swimming!" << endl;
         break;
-    case fall:
+    case Seasons::fall:
         cout << "It´s cold" << endl;
         break;
-    case winter:
+    case Seasons::winter:
         cout << "It´s very cold" << endl;
         break;
     default:
