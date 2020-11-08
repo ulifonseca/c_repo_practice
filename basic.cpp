@@ -41,8 +41,11 @@ int main()
             cout << "Enter " << size << " numbers:" << endl;
             for (int i = 0; i < size; i++)
             {
-                cout << "Iindex [" << i << "] --> ";
-                std::cin >> a[i];
+                cout << "Index [" << i << "] --> ";
+                if (!(std::cin >> a[i]))
+                {
+                    option = 3;
+                }
             }
             cout << endl;
             display_array(a, size);
