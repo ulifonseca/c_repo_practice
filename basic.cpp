@@ -5,17 +5,27 @@
 using std::cout;
 using std::endl;
 
-int main()
+void fill_array(int a[], int size, int min, int max)
 {
-    int value;
-    int reps = 5;
-    int min = 10;
-    int max = 13;
-    srand(time(NULL));
-    for (int i = 0; i < reps; i++)
+    for (int i = 0; i < size; i++)
     {
-        cout << (rand() % (max - min + 1) + min) << " ";
+        a[i] = (rand() % (max - min + 1) + min);
+    }
+}
+void display_array(int a[], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        cout << a[i] << " ";
     }
     cout << endl;
+}
+int main()
+{
+    int a[5] = {};
+    int size = sizeof(a) / sizeof(int);
+    srand(time(NULL));
+    fill_array(a, size, 5, 10);
+    display_array(a, size);
     return 0;
 }
