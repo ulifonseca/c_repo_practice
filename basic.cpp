@@ -6,18 +6,17 @@ using std::endl;
 
 int main()
 {
-    std::string password = "uli321";
-    std::string guess;
-    int count = 0;
-
-    do
+    std::string love = "Miriam Arreola Hernandez";
+    for (int i = 0; i < love.size(); i++)
     {
-        cout << "Guees the password: ";
-        std::cin >> guess;
-        count++;
-
-    } while (guess != password && count < 3);
-    cout << "You enter!" << endl;
+        cout << love[i] << endl;
+        if (love[i] == 'A')
+        {
+            cout << "Found 'A'!" << endl;
+            break;
+        }
+    }
+    cout << "Done!" << endl;
 
     return 0;
 }
