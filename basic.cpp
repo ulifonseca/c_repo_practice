@@ -6,17 +6,8 @@ using std::endl;
 
 int main()
 {
-    std::string love = "Miriam Arreola Hernandez";
-    for (int i = 0; i < love.size(); i++)
-    {
-
-        if (love[i] == 'A')
-        {
-            continue;
-        }
-        cout << love[i] << endl;
-    }
-    cout << "Done!" << endl;
-
+    int age = 19;
+    age > 18 ? std::cout << "Legal" : age < 18 ? std::cout << "Illegal" : std::cout << "You are 18";
+    cout << endl;
     return 0;
 }
