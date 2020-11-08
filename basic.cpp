@@ -1,13 +1,21 @@
 #include <iostream>
 #include <string>
+#include <time.h>
 
 using std::cout;
 using std::endl;
 
 int main()
 {
-    int age = 19;
-    age > 18 ? std::cout << "Legal" : age < 18 ? std::cout << "Illegal" : std::cout << "You are 18";
+    int value;
+    int reps = 5;
+    int min = 10;
+    int max = 13;
+    srand(time(NULL));
+    for (int i = 0; i < reps; i++)
+    {
+        cout << (rand() % (max - min + 1) + min) << " ";
+    }
     cout << endl;
     return 0;
 }
