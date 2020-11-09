@@ -46,8 +46,17 @@ int main()
             break;
         case 2:
             cout << "Pop vector..." << endl;
-            pop_vector(vector1);
-            cout << endl;
+            if (vector1.size() == 0)
+            {
+                cout << "Sorry, the vector is empty" << endl;
+                break;
+            }
+            else
+            {
+                pop_vector(vector1);
+                cout << endl;
+            }
+
         case 3:
             display_vector(vector1);
             cout << endl;
