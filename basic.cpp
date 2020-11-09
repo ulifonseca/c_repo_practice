@@ -33,7 +33,7 @@ int main()
     do
     {
         cout << endl;
-        cout << "(1)Push vector.\n(2)Pop vector\n(3)Display vector.\n(4)Exit.\nOption? ";
+        cout << "(1)Push vector.\n(2)Pop vector\n(3)Display vector.\n(4)Clear vector\n(5)Exit.\nOption? ";
         std::cin >> option;
         switch (option)
         {
@@ -54,18 +54,33 @@ int main()
             else
             {
                 pop_vector(vector1);
+                display_vector(vector1);
                 cout << endl;
             }
-
+            break;
         case 3:
-            display_vector(vector1);
+            if (vector1.size() == 0)
+            {
+                cout << endl
+                     << "<--Vector empty-->" << endl;
+            }
+            else
+            {
+                display_vector(vector1);
+            }
             cout << endl;
+            break;
+        case 4:
+            cout << "Erasing array..." << endl;
+            vector1.clear();
+            break;
         default:
+            cout << "Try another option please!" << endl;
             break;
         }
 
         /* code */
-    } while (option != 4);
+    } while (option != 5);
 
     return 0;
 }
