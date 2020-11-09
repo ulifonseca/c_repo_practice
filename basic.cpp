@@ -4,27 +4,14 @@
 using std::cout;
 using std::endl;
 
-void display_array(std::array<int, 5> &data)
-{
-    for (int i = 0; i < data.size(); i++)
-    {
-        cout << data[i] << " " << endl;
-    }
-}
-
-void fill_array(std::array<int, 5> &data)
-{
-    for (int i = 0; i < data.size(); i++)
-    {
-        data[i] = i + 1;
-    }
-}
 int main()
 {
-    cout << "STL Array..." << endl;
-    std::array<int, 5> stl_array = {};
-    display_array(stl_array);
-    fill_array(stl_array);
-    display_array(stl_array);
+    cout << "For each..." << endl;
+    std::array<double, 7> array1 = {1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7};
+    for (double x : array1)
+    {
+        cout << "Index [" << (int(x) - 1) << "] --> " << x << endl;
+    }
+
     return 0;
 }
